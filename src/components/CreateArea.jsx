@@ -22,7 +22,7 @@ function CreateArea(props) {
  setNote({title:"",content:""});
   }
 
-  return (
+  return (f
     <div>
       <form onSubmit={handleSubmit}>
         <input
