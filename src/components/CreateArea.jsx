@@ -21,7 +21,7 @@ function CreateArea(props) {
     props.onAddItem(note);
  setNote({title:"",content:""});
   }
-f
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
