@@ -17,7 +17,9 @@ function CreateArea(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    if(note.title!=""&&note.content!="")
     props.onAddItem(note);
+ setNote({title:"",content:""});
   }
 
   return (
