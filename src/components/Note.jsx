@@ -1,13 +1,14 @@
 import React from "react";
-
+import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
+import Fab from '@mui/material/Fab';
 function Note(props) {
   return (
     <div className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <button onClick={()=>{
+      <Fab onClick={()=>{
         props.delNote(props.id);
-      }}><i className="fa-sharp fa-solid fa-minus fa-2xl"></i></button>
+      }}><RemoveCircleOutlineIcon/></Fab>
     </div>
   );
 }
