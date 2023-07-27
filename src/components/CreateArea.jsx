@@ -22,7 +22,7 @@ function CreateArea(props) {
  setNote({title:"",content:""});
   }
 
-  return (f
+  return (
     <div>
       <form onSubmit={handleSubmit}>
         <input
@@ -38,7 +38,7 @@ function CreateArea(props) {
           rows="3"
           value={note.content}
         />
-        <button type="submit">Add</button>
+        <button type="submit"><i className="fa-sharp fa-solid fa-plus fa-xl"></i></button>
       </form>
     </div>
   );

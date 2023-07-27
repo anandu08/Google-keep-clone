@@ -7,7 +7,7 @@ function Note(props) {
       <p>{props.content}</p>
       <button onClick={()=>{
         props.delNote(props.id);
-      }} className="del-btn"><i className="fa-sharp fa-solid fa-minus fa-2xl"></i></button>
+      }}><i className="fa-sharp fa-solid fa-minus fa-2xl"></i></button>
     </div>
   );
 }
